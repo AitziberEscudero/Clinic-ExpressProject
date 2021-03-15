@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLÍNICA JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div id=mainTitle>
+            <h1><a href="index.html">CLÍNICA JS</a></h1>
+            <p>Admin</p>
+        </div>
+        <nav>
+            <a href="pacientes.html">PACIENTES</a>
+            <a href="citas.html">CITAS</a>
+            <a target="_blank" href="medicos.html">MEDICOS</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Coja la cita</h2>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha">
+
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" min="08:30:00" max="19:00:00">       
+
+        <label for="especialidad">Especialidad</label>
+        <select id="especialidad" name="especialidad" value="escoge">
+            <option value="Alergología">Alergología</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Gastroenterología">Gastroenterología</option>
+            <option value="Ginecología">Ginecología</option>
+            <option value="Nefrología">Nefrología</option>
+            <option value="Neurología">Neurología</option>
+            <option value="Neumología">Neumología</option>
+            <option value="Oftalmología">Oftalmología</option>
+            <option value="Otorrinolaringología">Otorrinolaringología</option>
+            <option value="Oncologia">Oncologia</option>
+            <option value="Ortopedia">Ortopedia</option>
+            <option value="Pediatría">Pediatría</option>
+            <option value="Psiquiatría">Psiquiatría</option>
+            <option value="Urología">Urología</option>
+        </select>
+
+        <button type="submit" id="citaNueva">OK</button>
+    </main>
+</body>
+
+
+<script src="js/citaNueva.js"></script>
+
+
+</html>
